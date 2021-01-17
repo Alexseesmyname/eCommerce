@@ -18,6 +18,8 @@
         line-height: 16px
         color: $primary
         text-decoration: none
+    &__phone, &__email
+        color: $black
     &__inner
         display: flex
         align-items: center
@@ -79,6 +81,10 @@
         border: none
         border-left: 1px solid #d1d1d1
         background-color: #f9f9f9
+        &::-webkit-input-placeholder
+            color: #a9a9a9
+        &::-moz-placeholder
+            color: #a9a9a9
     &__button
         position: absolute
         top: 0
