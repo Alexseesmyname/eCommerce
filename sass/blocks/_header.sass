@@ -23,3 +23,43 @@
         align-items: center
         justify-content: space-between
         padding: 40px 0
+.search
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 500px
+    padding: 10px 0 9px 16px
+    border: 1px solid #d1d1d1
+    border-radius: 12px
+    background-color: #f9f9f9
+    overflow: hidden
+    &__selector
+        width: 130px
+        font-family: $poppins
+        font-weight: 700
+        font-size: 15px
+        line-height: 22px
+        background-color: #f9f9f9
+        appearance: none
+        border: none
+        background-image: url(../img/chevron-down.svg)
+        background-repeat: no-repeat    
+        background-position: right center
+    &__input
+        width: 330px
+        padding: 0 40px 0 24px
+        border: none
+        border-left: 1px solid #d1d1d1
+        background-color: #f9f9f9
+    &__button
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        padding: 0 16px   
+        background-image: url(../img/search-icon.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-color: #f9f9f9
+        border: none 
