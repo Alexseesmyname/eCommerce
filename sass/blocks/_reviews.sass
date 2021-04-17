@@ -1,5 +1,7 @@
 .reviews
-    padding: 64px 0
+    &__container
+        border-top: 1px solid #f9f9f9
+        border-bottom: 1px solid #f9f9f9
     &__head
         display: flex
         justify-content: space-between
@@ -57,4 +59,40 @@
             display: flex
             column-gap: 32px
         &__slide
-            min-height: 220px 
+            min-height: 220px
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 10%
+            background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+            opacity: 0.7 
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            height: 100%
+            width: 10%
+            background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+            opacity: 0.7
+            transform: rotate(180deg)
+        &__button
+            position: absolute
+            top: 50%
+            z-index: 15
+            transform: translateY(-50%)
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 32px
+            height: 48px
+            background-color: #000000
+            &_left
+                left: 0
+                border-radius: 0 12px 12px  0
+            &_right
+                right: 0
+                border-radius: 12px 0 0 12px
