@@ -47,24 +47,29 @@
             margin: 0 0 -24px
             width: 48px
             height: 48px
-            object-fit: cover
             border-radius: 50%
             overflow: hidden
         &__image
             width: 100%
             height: 100%
+            object-fit: cover
     .slider
         position: relative
+        overflow: hidden
         &__wrapper
             display: flex
             column-gap: 32px
         &__slide
-            min-height: 220px
+            display: flex
+            align-items: center
+            column-gap: 32px
+            min-height: 245px
         &::before
             content: ""
             position: absolute
             top: 0
             left: 0
+            z-index: 10
             height: 100%
             width: 10%
             background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
@@ -74,6 +79,7 @@
             position: absolute
             top: 0
             right: 0
+            z-index: 10
             height: 100%
             width: 10%
             background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
