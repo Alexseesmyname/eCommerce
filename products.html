@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__links-wrapper">
+          <div class="header__contacts">
+            <a href="#!" class="header__link link">Chat with us</a>
+            <a href="tel:+420336775664" class="header__link link header__phone"
+              >+420 336 775 664</a
+            >
+            <a
+              href="mailto:info@freshnesecom.com"
+              class="header__link link header__email"
+              >info@freshnesecom.com</a
+            >
+          </div>
+          <!-- /.header__contact-wrapper -->
+          <div class="header__links">
+            <a href="#!" class="header__link link">Blog</a>
+            <a href="#!" class="header__link link">About Us</a>
+            <a href="#!" class="header__link link">Careers</a>
+          </div>
+          <!-- /.header__links -->
+        </div>
+        <!-- /.header__links-wrapper -->
+        <div class="header__inner">
+          <a href="#" class="header__logo-wrapper">
+            <img src="img/brand.svg" alt="logo" />
+          </a>
+          <div class="header__search search">
+            <select class="search__selector">
+              <option selected>All categories</option>
+              <option>Bakery</option>
+              <option>Fruit and vegetables</option>
+              <option>Meat and fish</option>
+              <option>Drinks</option>
+              <option>Kitchen</option>
+              <option>Special nutrition</option>
+              <option>Baby</option>
+              <option>Pharmacy</option>
+            </select>
+            <input
+              type="search"
+              name="search"
+              class="search__input"
+              placeholder="Search Products, categories ..."
+            />
+            <button class="button search__button"></button>
+          </div>
+          <!-- /.header__search-wrapper -->
+          <div class="header__buttons">
+            <button class="button header__button header__user">
+              <img src="img/user.svg" alt="icon" />
+            </button>
+            <div class="header__cart-wrapper cart">
+              <button class="button header__button header__shopping-cart">
+                <img src="img/shopping-cart.svg" alt="icon" />
+              </button>
+              <div class="cart__counter">4</div>
+            </div>
+          </div>
+          <!-- /.header__buttons -->
+        </div>
+        <!-- /.header__inner -->
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <ul class="navbar__list list">
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Bakery</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Fruit and vegetables</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Meat and fish</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Drinks</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Kitchen</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Special nutrition</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Baby</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Pharmacy</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="category">
+      <div class="category__container container">
+        <nav class="category__breadcrump breadcrump">
+          <ul class="breadcrump__list">
+            <li class="breadcrump__item">
+              <a href="#!" class="breadcrump__link link">Homepage</a>
+            </li>
+            <li class="breadcrump__item">
+              <a href="#!" class="breadcrump__link breadcrump__link_active link"
+                >Fruit and vegetables</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="category__head head">
+          <h1 class="head__title">Fruit and vegetables</h1>
+          <div class="head__view view">
+            <button class="view__button view__button_active view-button button">
+              <img src="img/grid-icon.svg" alt="" /><span
+                class="view-button__text"
+                >Grid view</span
+              >
+            </button>
+            <button class="view__button view-button button">
+              <img src="img/list-icon.svg" alt="" /><span
+                class="view-button__text"
+                >List view</span
+              >
+            </button>
+            <div class="view__products-count products-count">
+              <span class="products-count__count">117</span>
+              <span class="products-count__text">Products</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__links-wrapper">
+          <ul class="footer__links links">
+            <li class="links__group group">
+              <h2 class="group__title title">Get in touch</h2>
+              <ul class="group__items">
+                <li class="group__item">
+                  <a href="#!" class="group__link link">About Us</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Careers</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Press Releases</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="links__group group">
+              <h2 class="group__title title">Connections</h2>
+              <ul class="group__items">
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Facebook</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Twitter</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Instagram</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Youtube</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </li>
+            <li class="links__group group">
+              <h2 class="group__title title">Earnings</h2>
+              <ul class="group__items">
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Become an Affiliate</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link"
+                    >Advertise your product</a
+                  >
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Sell on Market</a>
+                </li>
+              </ul>
+            </li>
+            <li class="links__group group">
+              <h2 class="group__title title">Account</h2>
+              <ul class="group__items">
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Your account</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Returns Centre</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link"
+                    >100% purchase protection</a
+                  >
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Chat with us</a>
+                </li>
+                <li class="group__item">
+                  <a href="#!" class="group__link link">Help</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__tags tags">
+          <h2 class="tags__title title">Product tags</h2>
+          <div class="tags__wrapper">
+            <a href="#!" class="tags__tag link">Beans</a>
+            <a href="#!" class="tags__tag link">Carrots</a>
+            <a href="#!" class="tags__tag link">Apples</a>
+            <a href="#!" class="tags__tag link">Garlic</a>
+            <a href="#!" class="tags__tag link">Mushrooms</a>
+            <a href="#!" class="tags__tag link">Tomatoes</a>
+            <a href="#!" class="tags__tag link">Chilli peppers</a>
+            <a href="#!" class="tags__tag link">Broccoli</a>
+            <a href="#!" class="tags__tag link">Watermelons</a>
+            <a href="#!" class="tags__tag link">Oranges</a>
+            <a href="#!" class="tags__tag link">Bananas</a>
+            <a href="#!" class="tags__tag link">Grapes</a>
+            <a href="#!" class="tags__tag link">Cherries</a>
+            <a href="#!" class="tags__tag link">Meat</a>
+            <a href="#!" class="tags__tag link">Seo tag</a>
+            <a href="#!" class="tags__tag link">Fish</a>
+            <a href="#!" class="tags__tag link">Seo tag</a>
+            <a href="#!" class="tags__tag link">Fresh food</a>
+            <a href="#!" class="tags__tag link">Lemons</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

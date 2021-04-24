@@ -1,0 +1,73 @@
+.category
+    &__container
+        padding: 0
+    .breadcrump
+        padding: 16px 0
+        &__list
+            margin: 0
+            padding: 0
+            display: flex
+            align-items: center
+            list-style: none
+        &__item
+            display: flex
+            &::after
+                content: '/'
+                margin: 0 8px
+                font-size: 12px
+                line-height: 16px
+                color: #d1d1d1
+            &:last-child
+              &::after
+                  content: ''  
+        &__link
+            font-size: 12px
+            line-height: 16px
+            color: $light-grey
+            &_active
+                color: $black
+    .head
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__title
+            margin: 8px 0
+            font-family: $poppins
+            font-weight: 600
+            font-size: 32px
+            line-height: 48px
+            color: $black
+        .view
+            display: flex
+            align-items: center
+            &-button
+                margin-right: 24px
+                display: flex
+                align-items: center
+                font-size: 12px
+                line-height: 16px
+                color: $light-grey
+                border: 0
+                background-color: $white
+                &__text
+                    margin-left: 4px
+            &__button
+                &_active
+                    color: $black
+            .products-count
+                display: flex
+                align-items: center
+                &__count
+                    margin-right: 4px
+                    padding: 0 8px
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    color: $primary
+                    border-radius: 12px
+                    background-color: #f4f8ec
+                &__text
+                    font-size: 12px
+                    line-height: 16px
+                    color: $light-grey
