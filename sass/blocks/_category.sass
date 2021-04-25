@@ -71,3 +71,126 @@
                     font-size: 12px
                     line-height: 16px
                     color: $light-grey
+    .filters
+        padding: 16px 0
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        row-gap: 16px
+        .group
+            margin-right: 16px
+            padding: 9px 16px
+            display: flex
+            align-items: center
+            column-gap: 16px
+            border: 1px solid #d1d1d1
+            border-radius: 12px
+            background-color: #f9f9f9
+            .filter
+                display: flex
+                align-items: center
+                &__radio
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+                    &:checked+.filter__label
+                        &_radio::before
+                            border: 6px solid $black
+                &__checkbox
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+                    &:checked+.filter__label
+                        &_checkbox::before
+                            background-image: url(../img/checkbox-mark.svg)
+                            background-position: center
+                            background-repeat: no-repeat
+                            background-color: $primary
+                            border: 1.5px solid #46760a
+                &__label
+                    font-size: 14px
+                    line-height: 19px
+                    color: $black
+                    &_radio
+                        display: flex
+                        align-items: center
+                        &::before
+                            content: ''
+                            box-sizing: border-box
+                            margin-right: 8px
+                            width: 20px
+                            height: 20px
+                            flex-grow: 0
+                            flex-shrink: 0
+                            border: 1.5px solid #d1d1d1
+                            border-radius: 50%
+                    &_checkbox
+                        display: flex
+                        align-items: center
+                        &::before
+                            content: ''
+                            box-sizing: border-box
+                            margin-right: 8px
+                            width: 20px
+                            height: 20px
+                            flex-grow: 0
+                            flex-shrink: 0
+                            border: 1.5px solid #d1d1d1
+                &__txt
+                    margin-left: 8px
+                    padding: 0 8px
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    color: $black
+                    border: 1px solid #ebebeb   
+                    border-radius: 12px 
+                &__selector
+                    width: 60px
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    background-image: url(../img/chevron-down-black.svg)
+                    background-color: #f9f9f9
+                    &-wrapper
+                        display: flex
+                        align-items: center
+                        &::before
+                            content: ''
+                            margin: 0 24px
+                            width: 1px
+                            height: 20px
+                            background-color: #d1d1d1
+        .applied
+            flex-basis: 100%
+            display: flex
+            align-items: center
+            column-gap: 12px
+            &__text
+                font-family: $poppins
+                font-weight:    600
+                font-size: 12px
+                line-height: 18px
+                color: $light-grey   
+            &-filter
+                padding: 0 8px
+                display: flex
+                align-items: center
+                background-color: #f4f8ec
+                border-radius: 12px
+                &__name
+                    font-family:    $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    color: $primary
+                &__button
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 18px
+                    width: 18px    
+                    border: 0
+                    background-color: inherit         
