@@ -276,6 +276,11 @@
             flex-direction: column
             row-gap: 32px
             width: 100%
+        &_grid
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 
+            gap: 42px
+            width: 100%
     .line-product
         display: flex
         border: 1px solid #d1d1d1
@@ -357,6 +362,10 @@
                 color: $black
                 .button__txt
                     margin-left: 8px
+    .grid-product
+        &__rating
+            margin-bottom: 16px
+            height: 18px
     .products-count
                 display: flex
                 align-items: center
