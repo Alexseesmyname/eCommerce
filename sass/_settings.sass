@@ -30,6 +30,35 @@ select
     list-style: none
 .link
     text-decoration: none
+
+.checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    &:checked+&-label
+        &::before
+            background-image: url(../img/checkbox-mark.svg)
+            background-position: center
+            background-repeat: no-repeat
+            background-color: $primary
+            border: 1.5px solid #46760a
+    &-label
+        display: flex
+        align-items: center
+        font-size: 14px
+        line-height: 19px
+        color: $black
+        cursor: pointer
+        &::before
+            content: ''
+            box-sizing: border-box
+            margin-right: 8px
+            width: 20px
+            height: 20px
+            flex-grow: 0
+            flex-shrink: 0
+            border: 1.5px solid #d1d1d1
+
 .more-stuff
     display: flex
     align-items: center
@@ -46,6 +75,18 @@ select
         font-size: 15px
         line-height: 22px
         color: $black
+
+.primary-btn
+    display: flex
+    align-items: center
+    background-color: $primary
+    border: 2px solid #46760a
+    border-radius: 12px
+    font-family: $poppins
+    font-weight: bold
+    font-size: 15px
+    line-height: 22px
+    color: $white
 
 .product
     display: flex
@@ -107,16 +148,6 @@ select
                 text-decoration: line-through
                 color: $light-grey
         .product-button
-            display: flex
-            align-items: center
-            height: 36px
-            padding: 12px
-            background-color: $primary
-            border: 2px solid #46760a
-            border-radius: 12px
-            &__text
-                font-family: $poppins
-                font-weight: bold
-                font-size: 15px
-                line-height: 22px
-                color: $white
+            padding: 6px 12px
+            
+            
