@@ -88,7 +88,7 @@ select
     line-height: 22px
     color: $white
 
-.product
+.card
     display: flex
     flex-direction: column
     width: 268px
@@ -146,7 +146,33 @@ select
                 line-height: 18px
                 text-decoration: line-through
                 color: $light-grey
-        .product-button
+        .card-button
             padding: 6px 12px
-            
-            
+
+.breadcrump
+    padding: 16px 0
+    &__list
+        margin: 0
+        padding: 0
+        display: flex
+        align-items: center
+        list-style: none
+    &__item
+        display: flex
+        &::after
+            content: '/'
+            margin: 0 8px
+            font-size: 12px
+            line-height: 16px
+            color: #d1d1d1
+        &:last-child
+            &::after
+                content: ''  
+    &__link
+        font-size: 12px
+        line-height: 16px
+        color: $light-grey
+        &_active
+            color: $black
+        
+        

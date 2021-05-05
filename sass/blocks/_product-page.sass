@@ -1,0 +1,80 @@
+.product
+    &__container
+        padding: 0
+    &__inner
+        padding: 16px 0
+        display: flex
+        column-gap: 32px
+    &__images
+        display: flex
+        flex-direction: column
+        row-gap: 32px
+    &__img-wrapper
+        position: relative
+        width: 569px
+        height: 436px
+        background-color: #f9f9f9
+        border-radius: 12px
+        overflow: hidden
+    .label
+        position: absolute
+        z-index: 2
+        top: 16px
+        left: 16px
+        display: flex
+        align-items: center
+        column-gap: 12px
+        &__text
+            padding: 4px 10px
+            font-family: $poppins
+            font-weight: 600
+            font-size: 12px
+            line-height: 18px
+            color: $primary
+            background-color: #f4f8ec
+            border-radius: 12px
+    &__title
+        margin: 0 0 8px
+        font-family: $poppins
+        font-weight: 600
+        font-size: 32px
+        line-height: 45px
+        color: $black
+    &__rating
+        display: flex
+        align-items: center
+    &__reviews
+        margin-left: 8px
+        font-size: 12px
+        line-height: 16px
+        color: $light-grey
+    &__description
+        margin: 40px 0
+        font-size: 17px
+        line-height: 23px
+        color: $black
+    &__characteristic-wrapper
+        margin-bottom: 40px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__characteristic-group
+        display: flex
+        column-gap: 20px
+    .characteristic
+        &__item
+            margin-bottom: 12px
+            font-size: 14px
+            line-height: 19px
+            color: $light-grey
+            &:last-child
+                margin-bottom: 0
+    .value
+        &__item
+            margin-bottom: 12px
+            font-size: 14px
+            line-height: 19px
+            color: $black
+        &__link
+            color: $black
+            
