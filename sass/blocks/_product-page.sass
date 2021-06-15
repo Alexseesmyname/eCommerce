@@ -77,4 +77,82 @@
             color: $black
         &__link
             color: $black
-            
+    &__wrapper
+        display: flex
+        flex-direction: column
+    &__price-wrapper
+        margin-bottom: 24px
+        padding: 16px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border: 1px solid #f5f5f5
+        border-radius: 12px
+        .price
+            flex-basis: 40%
+            display: flex
+            flex-direction: column
+            &__new
+                font-family: $poppins
+                font-weight: 600
+                font-size: 26px
+                line-height: 39px
+                color: $primary
+            &__old
+                font-family: $poppins
+                font-weight: 600
+                font-size: 12px
+                line-height: 18px
+                color: $light-grey
+                text-decoration: line-through
+        .selector
+            padding: 14px 16px
+            display: flex
+            align-items: center
+            background-color: #f9f9f9
+            border: 1px solid #d1d1d1
+            border-radius: 12px
+            &__number
+                font-size: 14px
+                line-height: 19px
+                color: #d1d1d1
+            &__wrapper
+                display: flex
+                align-items: center
+                &::before
+                    content: ''
+                    width: 1px
+                    height: 20px
+                    margin: 0 16px
+                    background-color: #d1d1d1
+            &__select
+                width: 42px
+                font-family: $poppins
+                font-weight: 600
+                font-size: 12px
+                line-height: 18px
+                color: $black
+                background-color: #f9f9f9
+                background-image: url(../img/chevron-down-black.svg)
+        .add-button
+            padding: 12px 16px
+            &__text
+                margin-left: 6px
+    &__btn-wrapper
+        display: flex
+        align-items: center
+        column-gap: 16px
+        .product-button
+            padding: 6px 12px
+            display: flex
+            align-items: center
+            background-color: #fff
+            border:  none
+            &__text
+                margin-left: 6px
+                font-family: $poppins
+                font-weight: bold
+                font-size: 15px
+                line-height: 22px
+                color: $black
+                            
