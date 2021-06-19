@@ -139,6 +139,7 @@
             &__text
                 margin-left: 6px
     &__btn-wrapper
+        margin-bottom: 62px
         display: flex
         align-items: center
         column-gap: 16px
@@ -155,4 +156,66 @@
                 font-size: 15px
                 line-height: 22px
                 color: $black
-                            
+    .tab
+        &__changers-wrapper
+            margin-bottom: 48px
+            display: flex
+            align-items: center                            
+        &__changer-wrapper
+            padding-bottom: 16px
+            display: flex
+            align-items: center
+            width: 100%
+            border-bottom: 1px solid #f5f5f5
+        .changer
+            display: flex
+            align-items: center
+            background-color: $white
+            border: none
+            &__text
+                margin: 0 8px 0 0
+            &__nmbr
+                padding: 0 8px
+                font-family:   $poppins
+                font-weight: 600
+                font-size: 12px
+                line-height: 18px
+                color: $primary
+                background-color: #f4f8ec
+                border-radius: 12px
+        .active-changer
+            border-bottom: 1px solid $primary
+        .content
+            &__title
+                margin: 0 0 8px
+                font-family: $poppins
+                font-weight: 500
+                font-size: 15px
+                line-height: 22px
+                color: $black
+            &__text
+                margin: 0 0 32px
+                font-size: 14px
+                line-height: 19px
+                color: $black
+            .table
+                padding: 8px 0 0
+                &__title-wrapper
+                    display: grid
+                    grid-template-columns: 1fr 1fr 1fr
+                    border-bottom: 1px solid #ebebeb
+                &__title
+                    margin: 7px 0
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    color: $black
+                .values
+                    display: grid
+                    grid-template-columns: 1fr 1fr 1fr
+                    &__text
+                        margin: 10px 0
+                        font-size: 14px
+                        line-height: 19px
+                        color: $dark-grey
