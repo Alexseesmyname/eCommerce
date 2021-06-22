@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__links-wrapper">
+          <div class="header__contacts">
+            <a href="#!" class="header__link link">Chat with us</a>
+            <a href="tel:+420336775664" class="header__link link header__phone"
+              >+420 336 775 664</a
+            >
+            <a
+              href="mailto:info@freshnesecom.com"
+              class="header__link link header__email"
+              >info@freshnesecom.com</a
+            >
+          </div>
+          <!-- /.header__contact-wrapper -->
+          <div class="header__links">
+            <a href="#!" class="header__link link">Blog</a>
+            <a href="#!" class="header__link link">About Us</a>
+            <a href="#!" class="header__link link">Careers</a>
+          </div>
+          <!-- /.header__links -->
+        </div>
+        <!-- /.header__links-wrapper -->
+        <div class="header__inner">
+          <a href="#" class="header__logo-wrapper">
+            <img src="img/brand.svg" alt="logo" />
+          </a>
+          <div class="header__search search">
+            <select class="search__selector">
+              <option selected>All categories</option>
+              <option>Bakery</option>
+              <option>Fruit and vegetables</option>
+              <option>Meat and fish</option>
+              <option>Drinks</option>
+              <option>Kitchen</option>
+              <option>Special nutrition</option>
+              <option>Baby</option>
+              <option>Pharmacy</option>
+            </select>
+            <input
+              type="search"
+              name="search"
+              class="search__input"
+              placeholder="Search Products, categories ..."
+            />
+            <button class="button search__button"></button>
+          </div>
+          <!-- /.header__search-wrapper -->
+          <div class="header__buttons">
+            <button class="button header__button header__user">
+              <img src="img/user.svg" alt="icon" />
+            </button>
+            <div class="header__cart-wrapper cart">
+              <button class="button header__button header__shopping-cart">
+                <img src="img/shopping-cart.svg" alt="icon" />
+              </button>
+              <div class="cart__counter">4</div>
+            </div>
+          </div>
+          <!-- /.header__buttons -->
+        </div>
+        <!-- /.header__inner -->
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <ul class="navbar__list list">
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Bakery</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Fruit and vegetables</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Meat and fish</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Drinks</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Kitchen</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Special nutrition</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Baby</option>
+            </select>
+          </li>
+          <li class="navbar__item item">
+            <select class="item__selector">
+              <option selected>Pharmacy</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="payment">
+      <div class="payment__container container">
+        <nav class="payment__breadcrump breadcrump">
+          <ul class="breadcrump__list">
+            <li class="breadcrump__item">
+              <a href="#!" class="breadcrump__link link">Homepage</a>
+            </li>
+            <li class="breadcrump__item">
+              <a href="#!" class="breadcrump__link link"
+                >Fruit and vegetables</a
+              >
+            </li>
+            <li class="breadcrump__item">
+              <a href="#!" class="breadcrump__link breadcrump__link_active link"
+                >Carrots from Tomissy Farm</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="payment__inner">
+          <div class="payment__steps">
+              <div class="billing-info step">
+                  <div class="step__head">
+                      <h2 class="step__title title">Billing info</h2>
+                      <div class="step__subtitle-wrapper">
+                          <span class="step__subtitle">Please enter your billing info</span>
+                          <span class="step__subtitle">Step 1 of 5</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="billing-method step">
+                  <div class="step__head">
+                      <h2 class="step__title title">Billing method</h2>
+                      <div class="step__subtitle-wrapper">
+                          <span class="step__subtitle">Please enter your payment method</span>
+                          <span class="step__subtitle">Step 2 of 5</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="payment-method step">
+                  <div class="step__head">
+                      <h2 class="step__title title">Payment method</h2>
+                      <div class="step__subtitle-wrapper">
+                          <span class="step__subtitle">Please enter your payment method</span>
+                          <span class="step__subtitle">Step 3 of 5</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="additional-info step">
+                  <div class="step__head">
+                      <h2 class="step__title title">Additional informations</h2>
+                      <div class="step__subtitle-wrapper">
+                          <span class="step__subtitle">Need something else? We will make it for you!</span>
+                          <span class="step__subtitle">Step 4 of 5</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="confirmation step">
+                  <div class="step__head">
+                      <h2 class="step__title title">Confirmation</h2>
+                      <div class="step__subtitle-wrapper">
+                          <span class="step__subtitle">We are getting to the end. Just few clicks and your order si ready!</span>
+                          <span class="step__subtitle">Step 5 of 5</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="payment__cart cart">
+            <h2 class="cart__title step__title title">Order Summary</h2>
+            <p class="cart__subtitle step__subtitle">Price can change depending on shipping method and taxes of your state.</p>
+            <div class="cart-item">
+              <div class="cart-item__wrapper_left">
+                <div class="cart-item__img-wrapper">
+                  <img src="" alt="">
+                </div>
+                <button class="cart-item__button cart-item-btn button">
+                  <img class="cart-item-btn__img" src="img/heart-icon-red.svg" alt="">
+                  <span class="cart-item-btn__text">Wishlist</span>
+                </button>
+                <button class="cart-item__button cart-item-btn button">
+                  <img class="cart-item-btn__img" src="img/compare-icon.svg" alt="">
+                  <span class="cart-item-btn__text">Compare</span>
+                </button>
+                <button class="cart-item__button cart-item-btn button">
+                  <img class="cart-item-btn__img" src="img/remove-icon.svg" alt="">
+                  <span class="cart-item-btn__text">Remove</span>
+                </button>
+              </div>
+              <div class="cart-item__wrapper_wright">
+                <h3 class="cart-item__title">Product title</h3>
+                <div class="cart-item__info-wrapper">
+                  <div class="cart-item__info">
+                    <span class="cart-item__txt">Farm:</span>
+                    <span class="cart-item__value">Tharamis Farm</span>
+                    <span class="cart-item__txt">Freshness:</span>
+                    <span class="cart-item__value">1 day old</span>
+                  </div>
+                </div>
+                <div class="cart-item__rating">
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-empty.svg" alt="" />
+                </div>
+                <div class="cart-item__price-wrapper">
+                  <div class="cart-item__price price">
+                    <span class="price__new">36.23 USD</span>
+                    <span class="price__old">48.56 USD</span>
+                  </div>
+                  <div class="cart-item__selector selector">
+                    <span class="selector__number">1pcs</span>
+                    <div class="selector__wrapper">
+                      <select class="selector__select" name="#" id="#">
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="cart-item__wrapper_left">
+                <div class="cart-item__img-wrapper">
+                  <img src="" alt="">
+                </div>
+                <button class="cart-item__button cart-item-btn button">
+                  <img class="cart-item-btn__img" src="img/heart-icon-red.svg" alt="">
+                  <span class="cart-item-btn__text">Wishlist</span>
+                </button>
+                <button class="cart-item__button cart-item-btn button">
+                  <img class="cart-item-btn__img" src="img/compare-icon.svg" alt="">
+                  <span class="cart-item-btn__text">Compare</span>
+                </button>
+                <button class="cart-item__button cart-item-btn button">
+                  <img class="cart-item-btn__img" src="img/remove-icon.svg" alt="">
+                  <span class="cart-item-btn__text">Remove</span>
+                </button>
+              </div>
+              <div class="cart-item__wrapper_wright">
+                <h3 class="cart-item__title">Product title</h3>
+                <div class="cart-item__info-wrapper">
+                  <div class="cart-item__info">
+                    <span class="cart-item__txt">Farm:</span>
+                    <span class="cart-item__value">Tharamis Farm</span>
+                    <span class="cart-item__txt">Freshness:</span>
+                    <span class="cart-item__value">1 day old</span>
+                  </div>
+                </div>
+                <div class="cart-item__rating">
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-fill.svg" alt="" />
+                  <img src="img/icon-star-empty.svg" alt="" />
+                </div>
+                <div class="cart-item__price-wrapper">
+                  <div class="cart-item__price price">
+                    <span class="price__new">36.23 USD</span>
+                    <span class="price__old">48.56 USD</span>
+                  </div>
+                  <div class="cart-item__selector selector">
+                    <span class="selector__number">1pcs</span>
+                    <div class="selector__wrapper">
+                      <select class="selector__select" name="#" id="#">
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                        <option value="#">Pcs</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

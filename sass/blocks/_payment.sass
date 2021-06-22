@@ -1,0 +1,139 @@
+.payment
+    &__container
+        padding: 0
+    &__inner 
+        display: flex
+        column-gap: 32px
+    &__steps
+        padding: 16px 0
+        width: 100%
+    .step
+        padding: 0 0 64px
+        &:last-child
+            padding: 0
+        &__title
+            margin: 0 0 4px 0
+            font-weight: 600
+            font-size: 22px
+            line-height: 33px
+        &__subtitle-wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__subtitle
+            font-size: 12px
+            line-height: 16px
+            color: $light-grey
+    .cart
+        padding: 32px 16px
+        max-width: 468px
+        width: 100%
+        border: 1px solid #d1d1d1
+        border-radius: 12px
+        &__subtitle
+            margin: 0 0 40px
+        &-item
+            margin-bottom: 32px
+            padding-bottom: 16px
+            display: flex
+            column-gap: 16px
+            border-bottom: 1px solid #f9f9f9
+            &__wrapper
+                &_left
+                    display: flex
+                    flex-direction: column
+                &_wright
+                    display: flex
+                    flex-direction: column
+                    width: 100%
+            &__img-wrapper
+                margin-bottom: 12px
+                width: 100px
+                height: 67px
+                background-color: #f9f9f9
+                border-radius: 12px
+            &-btn 
+                margin-bottom: 8px
+                display: flex
+                align-items: center
+                width: max-content
+                font-size: 12px
+                line-height: 16px
+                color: $light-grey
+                background-color: $white
+                border: none
+                &:last-child
+                    margin-bottom: 0    
+                &__text
+                    margin-left: 6px
+                &__img
+                    width: 16px
+                    height: 16px
+            &__title 
+                margin: 0 0 4px
+            &__info
+                margin-bottom: 8px
+                display: grid
+                grid-template-columns: 1fr 1fr
+                row-gap: 7px
+                width: 60%
+            &__txt
+                font-size: 12px
+                line-height: 16px
+                color: $light-grey
+            &__value
+                font-size: 12px
+                line-height: 16px
+                color: $black    
+            &__rating
+                margin-bottom: 16px
+                font-size: 0
+            &__price-wrapper
+                display: flex
+                align-items: center
+                justify-content: space-between
+            .price
+                display: flex
+                flex-direction: column
+                &__new
+                    font-family: $poppins  
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 27px
+                    color: $primary
+                &__old
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    color: $light-grey
+                    text-decoration: line-through
+            .selector
+                padding: 6px
+                display: flex
+                align-items: center
+                background-color: #f9f9f9
+                border: 1px solid #d1d1d1
+                border-radius: 12px
+                &__number
+                    font-size: 14px
+                    line-height: 19px
+                    color: #d1d1d1
+                &__wrapper
+                    display: flex
+                    align-items: center
+                    &::before
+                        content: ''
+                        width: 1px
+                        height: 20px
+                        margin: 0 6px
+                        background-color: #d1d1d1
+                &__select
+                    width: 42px
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 12px
+                    line-height: 18px
+                    color: $black
+                    background-color: #f9f9f9
+                    background-image: url(../img/chevron-down-black.svg) 
